@@ -33,10 +33,7 @@ class _HomeUIState extends State<HomeUI> {
         backgroundColor: '#FFFFFF'.toColor(),
         body: Container(
           decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("assets/images/BGLogin2.jpg"),
-                fit: BoxFit.cover,
-                opacity: 80),
+            image: DecorationImage(image: AssetImage("assets/images/BGLogin2.jpg"), fit: BoxFit.cover, opacity: 80),
           ),
           child: Column(
             children: [
@@ -51,7 +48,7 @@ class _HomeUIState extends State<HomeUI> {
                   alignment: Alignment.center,
                   child: Text(
                     'Power Electronic',
-                    style: GoogleFonts.didactGothic(
+                    style: GoogleFonts.signikaNegative(
                       fontSize: MediaQuery.of(context).size.width * 0.10,
                       color: Color.fromARGB(255, 0, 152, 246),
                     ),
@@ -81,10 +78,8 @@ class _HomeUIState extends State<HomeUI> {
                         ),
                       ),
                       hintText: 'Enter Username',
-                      hintStyle: GoogleFonts.didactGothic(
-                          color: Color.fromARGB(255, 72, 157, 253)),
-                      prefixIcon: Icon(CupertinoIcons.person_circle,
-                          color: Color.fromARGB(255, 72, 157, 253)),
+                      hintStyle: GoogleFonts.signikaNegative(color: Color.fromARGB(255, 72, 157, 253)),
+                      prefixIcon: Icon(CupertinoIcons.person_circle, color: Color.fromARGB(255, 72, 157, 253)),
                     ),
                   ),
                 ),
@@ -112,10 +107,8 @@ class _HomeUIState extends State<HomeUI> {
                         ),
                       ),
                       hintText: 'Enter Password',
-                      hintStyle: GoogleFonts.didactGothic(
-                          color: Color.fromARGB(255, 72, 157, 253)),
-                      prefixIcon: Icon(CupertinoIcons.lock_circle,
-                          color: Color.fromARGB(255, 72, 157, 253)),
+                      hintStyle: GoogleFonts.signikaNegative(color: Color.fromARGB(255, 72, 157, 253)),
+                      prefixIcon: Icon(CupertinoIcons.lock_circle, color: Color.fromARGB(255, 72, 157, 253)),
                     ),
                   ),
                 ),
@@ -134,16 +127,14 @@ class _HomeUIState extends State<HomeUI> {
                 },
                 style: ElevatedButton.styleFrom(
                   side: const BorderSide(
-                    color: Color.fromARGB(255, 122, 220, 255),
+                    color: Color.fromARGB(255, 197, 239, 255),
                   ),
-                  backgroundColor:
-                      Color.fromARGB(255, 72, 157, 253).withOpacity(0.75),
+                  backgroundColor: Color.fromARGB(255, 72, 157, 253).withOpacity(0.95),
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  foregroundColor:
-                      Color.fromARGB(6, 28, 60, 218).withOpacity(0.5),
+                  foregroundColor: Color.fromARGB(6, 28, 60, 218).withOpacity(0.5),
                   fixedSize: Size(
                     MediaQuery.of(context).size.width * 0.55,
                     MediaQuery.of(context).size.width * 0.057,
@@ -151,9 +142,10 @@ class _HomeUIState extends State<HomeUI> {
                 ),
                 child: Text(
                   'Login',
-                  style: GoogleFonts.didactGothic(
+                  style: GoogleFonts.signikaNegative(
                     color: Color.fromARGB(255, 253, 244, 244),
                     fontSize: MediaQuery.of(context).size.width * 0.04,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
